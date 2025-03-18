@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amazon</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+ box-sizing: border-box; 
+ scrollbar-width: none;
+
+
+}
+body{
+    min-width: 1300px;
+}
+.navbar-1{
+    height: 80px;
+    background-color: rgb(19, 25, 33);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+   
+  
+    
+}
+.search-amazon{
+    padding: 10px 10px ;
+    outline: none;
+    font-size: 20px;
+    width: 85%;
+
+
+}
+
+ .input-group{
+    width: 47%;
+
+ 
+ }
+ .hover-border{
+    padding: 5px;
+    cursor: pointer;
+ }
+ .hover-border:hover{
+    border: 1px solid white;
+
+ }
+ .navbar-2{
+    height: 40px;
+    background-color: rgb(34, 47, 62);
+    margin-top: 80px;
+    
+
+}
+.n2{
+    font-size: small;
+}
+.sss{
+           font-size: 14px;
+            font-weight: 500;
+            color:white;
+            padding: 0 8px;
+}
+.s2{
+    cursor: pointer;
+    font-size: 15px;
+}
+.s2:hover{
+    border: 1px solid white;
+}
+.ss{
+  width: 100vw;
+
+}
+.fade-effect{
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(to bottom, transparent, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff); 
+    position: relative;
+    bottom: 200px;
+
+}
+.box{
+    width: 22vw;
+    height: 450px;
+   background-color: rgb(255, 255, 255);
+    box-shadow:  0 0 30px grey;
+    margin: 10px;
+    
+}
+.r-3{
+    width: 96vw;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-shadow: 0 0 30px grey;
+}
+.orange{
+   width: 94%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+.red{
+  min-width: 42%;
+  max-width: 42%;
+  height:41%; 
+   /* background-color: red; */
+  margin: 10px;
+
+}
+.red p{
+  font-size: 12px;
+}
+.red1{
+  min-width: 42%;
+  max-width: 42%;
+  height:55%; 
+   /* background-color: red; */
+  margin: 10px;
+
+}
+.red1 p{
+  font-size: 12px;
+}
+.orange1{
+   width: 94%;
+    height: 50%;
+    margin: 45px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .orange2{
+   width: 94%;
+    height: 50%;
+    /* background-color: orange; */
+    margin: 45px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .red2{
+  min-width: 42%;
+  max-width: 42%;
+ height: 50%;
+   /* background-color: red; */
+  margin: 10px;
+}
+.red2 p{
+  font-size: 12px;
+}
+.row-1{
+            margin-top:150px;
+            padding-left: 18px;
+            padding-right: 18px;
+            width:100vw;
+            height:420px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ap{
+            width:100%;
+            display: flex;
+            justify-content: space-around;
+            gap:50px;
+            margin-top: 32px;
+        }
+        .r-2{
+            padding:18px;
+            width:97vw;
+            height:275px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: white;
+        }
+        
+        .r21{
+            gap:30px;
+            align-items: center;
+        }
+        .r22{
+          margin-top: 10px;
+            display:flex;
+           
+            overflow: scroll;
+            height:185px;
+            gap:10px;
+        }
+        .scooty{
+   width: 100%;
+    height: 80%;
+    background-image: url(i1.png);
+    margin: 0 auto;
+    
+    
+  }
+  .p-tag{
+    font-size:15px; 
+    color:#2162a1; 
+    font-weight:500; 
+    cursor:pointer;
+    margin-left: 10px;
+   
+  }
+  .trend{
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+  }
+  .b{
+   margin-top: -19px;
+   font-weight: 500;
+  }
+  .bg{
+    
+   width: 100%;
+    height: 80%;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/2025/WK_1/PC_CC_379X304._SY304_CB548714563_.jpg);
+    margin: 0 auto;
+  }
+  .foot{
+            background-color: #131921;
+            color: white;
+            width:100vw;
+            position:relative;
+            bottom:200px;
+            height: 250px;
+            padding-top: 30px;
+            
+        }
+        .footer1{
+            display: flex;
+            justify-content: space-evenly;
+            /* margin-bottom: 40px; */
+        }
+        .f{
+            color: rgb(195, 191, 191);
+            font-size: 14px;
+        }
+        .f-head{
+            font-size: 18px;
+            color: white;
+        }
+  
+  
+       
+
+</style>
+</head>
+<div>
+   <div class="navbar-1 d-flex align-items-center justify-content-evenly  w-100 gap-1">
+    <img src="amazon-logo.png" height="60%" alt="" class=" hover-border">
+    <div class="location text-white d-flex align-items-center justify-content-center hover-border">
+        <i class="fa-solid fa-location-dot fs-4 mx-1 "></i>
+        <div class="location-grp">
+            <p class="m-0">Delivery to HYD 501301</p>
+            <b class="m-0">Update Location</b>
+        </div>
+    </div>    
+        <div class="input-group mx-2">
+            <button class="btn btn-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
+             <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+       </ul>    
+            <input type="text" class=" form-control search-amazon" placeholder="Search Amazon.in" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text bg-warning  fs-4" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="dropdown d-flex align-items-center">
+            <button class="btn btn-transparent text-white fw-bold m-0 dropdown-toggle hover-border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+
+          <div class="dropdown">
+            <button class="btn btn-transparent m-0 d-flex align-items-center justify-content-center text-white dropdown-toggle hover-border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <div>
+            <p class="m-0 ">Hello,Signin</p>
+            <b class="m-0 ">Account&Lists</b>
+           </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+
+          <div class="text-white fs-5 hover-border">
+            <p class="m-0">Returns</p>
+            <b class="m-0">&Orders</b>
+          </div>
+
+          <div class="d-flex text-white fs-5 mx-1 mt-2 hover-border">
+            <i class="fa-solid fa-cart-shopping fs-4"></i>
+            <p>Cart</p>
+          </div>
+          
+   </div>
+          <!-- 2 -->
+          <div class="navbar-2  w-100 d-flex justify-content-evenly align-items-center ">
+
+            <div class="s2 sss text-white">
+              <b class="m-0"><i class="fa-solid fa-grip-lines mx-1"></i>All</b>
+            </div>
+        
+        
+            <div>
+              <button class="btn dropdown-toggle s2 sss text-white align-items-center d-flex justify-content-evenly" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <b class="m-0">Fresh </b>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <p class="text-white s2 sss mb-1">MX Player</p>
+            <p class="text-white s2 mb-1">Sell</p>
+            <p class="text-white s2 mb-1">Best Sellers</p>
+            <p class="text-white s2 mb-1">Today's Deals</p>
+            <p class="text-white s2 mb-1">Mobiles</p>
+            <p class="text-white s2 mb-1">Customer Service</p>
+            <p class="text-white s2 mb-1">Electronics</p>
+            
+                  <button class="btn dropdown-toggle s2 n2 text-white mb-2" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <b class="m-0">Prime</b>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                  <p class="text-white s2 mb-1">New Releases</p>
+                  <p class="text-white s2 mb-1">Home&Kitchen</p>
+                  <p class="text-white s2 mb-1">Fashion</p>
+                  <p class="text-white s2 mb-1">Computers</p>
+                  <p class="text-white s2 mb-1">Cars</p>
+                  <p class="text-white s2 mb-1">Books</p>
+                  <p class="text-white s2 mb-1">Motorbikes</p>
+                </div>
+
+              </div>  
+                <!-- 3 -->
+                 <div class="ss">
+                  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="a1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="1000">
+                        <img src="a2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="a3.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                 </div>
+            
+                <!-- 4-1 -->
+            <div class="fade-effect w-100 p-3 ">
+                  <div class="d-flex  justify-content-evenly">
+                    <div class="box p-4 hover-border">
+                      <h2>Automotive essentials | Up to 60% off</h2>
+                      <div class="orange">
+                          <div class="red">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg" width="110%" alt="">
+                            <p>Cleaning accessories</p>
+                          </div>
+                          
+                          <div class="red">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg" width="110%" alt="">
+                            <p>Tyre & rim care</p>
+                          </div>
+                          <div class="red">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg" width="110%"  alt="">
+                            <p>Helmets</p>
+                          </div>
+                          <div class="red">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg" width="110%" alt="">
+                            <p>Vaccum cleaner</p>
+                          </div>
+                          <p style="font-size:15px; color:#2162a1; font-weight:500; cursor:pointer">See more</p>
+                      </div>
+                    </div>
+                    
+                  <!-- 4-2 -->
+                  
+                      <div class="box p-4 hover-border">
+                        <h2>Appliances for your home | Up to 55% off</h2>
+                        <div class="orange">
+                            <div class="red">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" width="110%" alt="">
+                              <p>Air Conditioners</p>
+                            </div>
+                            
+                            <div class="red">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" width="110%" alt="">
+                              <p>Refrigerators</p>
+                            </div>
+                            <div class="red">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" width="110%"  alt="">
+                              <p>Microwaves</p>
+                            </div>
+                            <div class="red">
+                              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" width="110%" alt="">
+                              <p>Washing machines</p>
+                            </div>
+                            <p style="font-size:15px; color:#2162a1; font-weight:500; cursor:pointer">See more</p>
+                            
+                          </div>
+                       </div>
+                  
+                    <!-- 4-3 -->
+                    <div class="box p-4 hover-border">
+                      <h2>Revamp your home in style</h2>
+                      <div class="orange1">
+                          <div class="red1">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg" width="110%"   alt="">
+                            <p>Cushion covers,bedsheets&more</p>
+                          </div>
+                          
+                          <div class="red1">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg" width="110%" alt="">
+                            <p>Figurines,vases & more</p>
+                          </div>
+                          <div class="red1">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg" width="110%"  alt="">
+                            <p>Home storage</p>
+                          </div>
+                          <div class="red1">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg" width="110%" alt="">
+                            <p>Lighting solutions</p>
+                          </div>
+                          <p style="font-size:15px; color:#2162a1; font-weight:500; cursor:pointer">Explore all</p>
+                        </div>
+                   </div>
+                 <!-- 4-4 -->
+                 
+                  <div class="box p-4 hover-border">
+                    <h2>Starting ₹149 | Headphones</h2>
+                    <div class="orange2">
+                        <div class="red2">
+                          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg" width="110%"   alt="">
+                          <p>Starting ₹249 | boAt </p>
+                        </div>
+                        
+                        <div class="red2">
+                          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg" width="110%"  alt="">
+                          <p>Starting ₹349 | boult</p>
+                        </div>
+                        <div class="red2">
+                          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg" width="110%"  alt="">
+                          <p>Starting ₹649 | Noise</p>
+                        </div>
+                        <div class="red2">
+                          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg" width="110%" alt="">
+                          <p>Starting ₹149 | Zebronics</p>
+                        </div>
+                        <p style="font-size:15px; color:#2162a1; font-weight:500; cursor:pointer" class="ap">See all offers</p>
+                      </div>
+                    </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="r-2">
+                      <div class="d-flex r21 hover-border ">
+                          <h3>Up to 70% off | A wide range of electronics & accessories from Small businesses </h3>
+                          <p style="font-size:15px; color:#2162a1; font-weight:500; cursor:pointer;">See all offers</p>
+                      </div>
+                      <div class="r22 hover-border">
+                          <img src="https://m.media-amazon.com/images/I/61lpIqotYPL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/51gRzPRt51L._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/61mgu9K9ZFL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/51KaJg-OtWL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/41P7GVRxXyL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/61+AbtSQH9L._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/515HYKbqxML._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/71HTCMLTTML._AC_SY200_.jpgg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/71ef5xDbraL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/51gPV9GctFS._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/51nnSP43eQL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/611ybwA-rML._AC_SY200_.jpg" alt="">
+                      </div>
+                  </div> 
+                  <!-- 6 -->
+                  <div class="d-flex  justify-content-evenly">
+                    <div class="box p-4 hover-border"> 
+                      <h4>Up to 60% off | Car, bike parts & accessories</h4>
+                      <div class="scooty">
+                       
+                      </div>
+                          <p  class="p-tag">See more</p>
+                    </div> 
+
+
+
+                    <!-- 6-2 -->
+                    <div class="box p-4r">
+                      <h4>Up to 80% off | Handcrafted products from artisans…</h4>
+                      <div class="trend">
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                              <img src="j1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                              <img src="j2.png" class="d-block w-100 " alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                              <img src="j3.png" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+
+                        </div>
+                        <p>Vemptico Wooden Floating Shelves, 6
+                          Piece Hexagonal Shape Wall Mounte</p>
+                          <p class="b">from ₹880</p>
+                         
+                      </div>
+                      
+                        
+                     </div>
+                     <!-- 6-3 -->
+                     <div class="box p-4 hover-border">
+                      <h4>Best Sellers in Sports,Fitness & Outdoors</h4>
+                      <div class="orange1">
+                          <div class="red1 margin:5px">
+                            <img src="https://m.media-amazon.com/images/I/710SxepIfiL._AC_SY170_.jpg" width="70%"   alt="">
+                           
+                          </div>
+                          
+                          <div class="red1">
+                            <img src="https://m.media-amazon.com/images/I/61Av1lptLkL._AC_SY170_.jpg" width="100%" alt="">
+                            
+                          </div>
+                          <div class="red1">
+                            <img src="https://m.media-amazon.com/images/I/81feGML0NAL._AC_SY170_.jpg" width="90%"  alt="">
+                           
+                          </div>
+                          <div class="red1">
+                            <img src="https://m.media-amazon.com/images/I/61RpRYFb2wL._AC_SY170_.jpg" width="100%" alt="">
+                           
+                          </div>
+                          <p style="font-size:15px; color:#2162a1; font-weight:500; cursor:pointer; margin-bottom: 200px">See more</p>
+                        </div>
+                   </div>
+                   <!-- 6-4 -->
+                   <div class="box p-4 hover-border">
+                    <h4>Up to 50% off | International brands</h4>
+                    <div class="bg">
+                    </div>
+                        <p  class="p-tag">See more</p>
+                  </div>
+                    </div>
+                    
+                    <!-- 6-5 -->
+                    <div class="r-2 hover-border">
+                      <div class="d-flex r21 ">
+                          <h3>Trendy home decor</h3>
+                          <p style="font-size:15px; color:#2162a1; font-weight:500; cursor:pointer;">See all offers</p>
+                      </div>
+                      <div class="r22">
+                          <img src="https://m.media-amazon.com/images/I/81PxikOZzqL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/81wN5ep5CAL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/91XpoxeQqfL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/A1bQRIy6ZEL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/71uB4BEEx-L._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/81AxHBIHbqL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/71mPXWxxX0L._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/71espCyoRcL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/91pc8N5VHJL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/61X8sl5XoxL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/A1BgL2zPozL._AC_SY200_.jpg" alt="">
+                          <img src="https://m.media-amazon.com/images/I/91WMMK2loaL._AC_SY200_.jpg" alt="">
+                     </div>
+              </div> 
+          </div> 
+        </div>  
+                 
+           
+              <!-- 7 -->
+                 <div class="foot hover-border">
+                <div class="footer1">
+                    <div class="f">
+                     <h4 class="f-head">Get to know us</h4>
+                     <p>About Amazon</p>
+                     <p>Careers</p>
+                     <p>Press releases</p>
+                     <p>Amazon Science</p>
+                    </div>
+                    <div class="f">
+                     <h4 class="f-head">Connect with us</h4>
+                     <p>Facebook</p>
+                     <p>Twitter</p>
+                     <p>Instagram</p>
+                    </div>
+                    <div class="f">
+                     <h4 class="f-head">Make money with us</h4>
+                     <p>Sell on Amazon</p>
+                     <p>Supply to Amazon</p>
+                     <p>Become an affiliate</p>
+                     <p>Advertise your products</p>
+                    </div>
+                    <div class="f">
+                     <h4 class="f-head">Let us help you</h4>
+                     <p>Your Account</p>
+                     <p>Returns centre</p>
+                     <p>Amazon app download</p>
+                     <p>Help</p>
+                     </div>
+                     <p class="f text-center">© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+                </div>     
+              </div>
+             
+    
+        
+               
+
+        
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
